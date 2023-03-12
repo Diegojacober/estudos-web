@@ -1,0 +1,9 @@
+formatos tradicionais:
+    gif: 8 bits - até 256 cores
+    jpeg: 24 bits - até 16.7 milhões de cores
+    png: 8,24 e 32 bits de cores
+
+svg -> baseado em xml
+
+canvas -> javascript
+

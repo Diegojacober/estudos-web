@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando um svg</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        svg{
+            background-color: #ddd;
+            /*tamanho padrão
+            width: 300px;
+            height: 150px; */
+            width: 300px;
+            height: 300px;
+
+        }
+    </style>
+    
+    <svg>
+        <!-- Desenhando um circulo -->
+        <!-- cx -> posicao x
+        cy -> posicao y
+        r -> raio
+        fill -> cor de preenchimento
+        stroke -> borda
+        stroke-width -> largura da borda em px -->
+        <circle cx="60" cy="60" r="50" fill="#f00" stroke="#000" storke-width="5"></circle>
+        <circle cx="150" cy="150" r="50" fill="#f00" stroke="#000" storke-width="5"></circle>
+        <circle cx="240" cy="240" r="50" fill="#f00" stroke="#000" storke-width="5"></circle>
+    </svg>
+
+    <svg style="height:500px;width:350px">
+        <!-- Desenhando um retângulo -->
+        <!--   
+            x -> posicionamento x
+            y -> posicionamento y
+            width="" -> largura
+            height -> altura
+            fill -> cor do preenchimento
+            rx -> arredondamento da borda
+            fill-opacity -> opacidade
+        -->
+        <rect x="60" y="60" width="200" height="200" fill="blue" rx="20"></rect>
+        <rect x="120" y="120" width="200" height="200" fill="red" rx="20" fill-opacity="50%"></rect>
+    </svg>
+
+    <svg style="height:500px;width:350px">
+        <!-- Desenhando elipse -->
+        <!-- cx -> posicao x
+        cy -> posicao y
+        rx -> raio x
+        ry -> raio y
+        fill -> cor de preenchimento
+        stroke -> borda
+        stroke-width -> largura da borda em px -->
+        <ellipse cx="170" cy="250" rx="150" ry="100" fill="#f3c"></ellipse>
+    </svg>
+
+    <svg style="height:500px;width:350px">
+        <!-- Desenhar poligonos -->
+        <!--
+             Triangulo: 173,182 319,182 246,38
+             Losango: 200,200 300,350 400,200 300,50
+             Hexagono: 90,15 150,15 190,75 150,135 90,135 50,75
+             Estrela: 38,166 16,236 76,188 5,188 60,236 
+        -->
+        <polygon points="173,182 319,182 246,38" fill="yellow"></polygon>
+    </svg>
+
+    <svg>
+        <!-- Desenhando linhas -->
+        <!-- Polilinha: 20,20 50,130 50,20 140,140 230,80 -->
+        <!--
+             x1 -> x inicial
+             x2 -> x final
+             y1 -> y inicial
+             y2 -> y final
+        -->
+        <!-- <line x1="50" x2="250" y1="100" y2="100" stroke="red" stroke-width="8"></line> -->
+        <!-- inicial: x,y final: x,y -> linha 1 -->
+        <polyline fill="none" stroke="red" stroke-width="5" points="50,100 250,100 150,10 50,100"></polyline>
+        <polyline fill="none" stroke="red" stroke-width="5" points="50,150 250,150 120,210 260,215"></polyline>
+    </svg>
+
+</body>
+</html>
